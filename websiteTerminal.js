@@ -5,7 +5,7 @@ document.head.innerHTML += `
   padding: 8px;
   border: 0px;
   border-radius: 10px;
-  width: calc(100% - 32px);
+  width: calc(100vw - 32px);
   height: 150px;
   position: absolute;
   top: 0;
