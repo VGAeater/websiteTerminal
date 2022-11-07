@@ -5,7 +5,7 @@ document.head.innerHTML += `
   padding: 8px;
   border: 0px;
   border-radius: 8px;
-  width: calc(100vw - 32px);
+  width: calc(100% - 32px);
   height: 150px;
   position: absolute;
   top: 0;
@@ -171,10 +171,12 @@ pre > code.diff-highlight.diff-highlight .token.inserted:not(.prefix) {
 `;
 
 document.body.innerHTML += `
-<textarea id="editing" spellcheck="false" oninput="update(this.value); sync_scroll(this);" onscroll="sync_scroll(this);" onkeydown="check_tab(this, event);"></textarea>
-<pre id="highlighting" aria-hidden="true">
-<code class="language-html" id="highlighting-content"></code>
-</pre>
+<div style="position:fixed; width:50vw; height:100vh; right:0px;">
+  <textarea id="editing" spellcheck="false" oninput="update(this.value); sync_scroll(this);" onscroll="sync_scroll(this);" onkeydown="check_tab(this, event);"></textarea>
+  <pre id="highlighting" aria-hidden="true">
+    <code class="language-html" id="highlighting-content"></code>
+  </pre>
+</div>
 `;
 
 fetch('https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js').then(data=>{data.text().then(text=>{eval(text)})});
