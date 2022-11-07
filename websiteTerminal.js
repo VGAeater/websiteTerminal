@@ -1,13 +1,13 @@
 document.head.innerHTML += `
 <style>
 #editing, #highlighting {
-  margin: 8px;
+  margin: 10px;
   padding: 8px;
   border: 0px;
-  border-radius: 8px;
+  border-radius: 10px;
   width: calc(100% - 32px);
   height: 150px;
-  /*position: absolute;/*
+  position: absolute;
   top: 0;
   left: 0;
   overflow: auto;
@@ -177,12 +177,13 @@ pre > code.diff-highlight.diff-highlight .token.inserted:not(.prefix) {
 `;
 
 document.body.innerHTML += `
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
 <textarea id="editing" spellcheck="false" oninput="update(this.value); sync_scroll(this);" onscroll="sync_scroll(this);" onkeydown="check_tab(this, event);"></textarea>
 <pre id="highlighting" aria-hidden="true">
 <code class="language-html" id="highlighting-content"></code>
 </pre>
 `;
+
+fetch('https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js').then(data=>{data.text().then(text=>{eval(text)})});
 
 update = function(text) {
   let result_element = document.querySelector("#highlighting-content");
