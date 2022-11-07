@@ -1,13 +1,13 @@
 document.head.innerHTML += `
 <style>
 #editing, #highlighting {
-  margin: 10px;
-  padding: 10px;
+  margin: 8px;
+  padding: 8px;
   border: 0px;
-  border-radius: 10px;
+  border-radius: 8px;
   width: calc(100% - 32px);
   height: 150px;
-  position: absolute;
+  /*position: absolute;/*
   top: 0;
   left: 0;
   overflow: auto;
