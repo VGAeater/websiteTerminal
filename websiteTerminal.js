@@ -27,14 +27,8 @@ document.head.innerHTML += `
   resize: none;
 }
 #highlighting {
-  z-index: 0;
+  z-index: 1;
 }
-p code {
-  border-radius: 2px;
-  background-color: #eee;
-  color: #111;
-}
-
 
 /* Syntax Highlighting from prism.js starts below, partly modified: */
 
