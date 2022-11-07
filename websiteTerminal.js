@@ -1,10 +1,10 @@
 document.head.innerHTML += `
 <style>
 #editing, #highlighting {
-  margin: 10px;
+  margin: 8px;
   padding: 8px;
   border: 0px;
-  border-radius: 10px;
+  border-radius: 8px;
   width: calc(100vw - 32px);
   height: 150px;
   position: absolute;
@@ -14,9 +14,9 @@ document.head.innerHTML += `
   white-space: nowrap;
 }
 #editing, #highlighting, #highlighting * {
-  font-size: 15pt;
+  font-size: 12pt;
   font-family: monospace;
-  line-height: 20pt;
+  line-height: 16pt;
   tab-size: 2;
 }
 #editing {
@@ -27,7 +27,7 @@ document.head.innerHTML += `
   resize: none;
 }
 #highlighting {
-  z-index: 1;
+  z-index: 0;
 }
 
 /* Syntax Highlighting from prism.js starts below, partly modified: */
