@@ -10,8 +10,8 @@ document.head.innerHTML += `
   position: absolute;
   top: 0;
   left: 0;
-  overflow: auto;
-  white-space: nowrap;
+  /*overflow: auto;
+  white-space: nowrap;/*
 }
 #editing, #highlighting, #highlighting * {
   font-size: 12pt;
