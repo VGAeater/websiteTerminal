@@ -177,6 +177,7 @@ pre > code.diff-highlight.diff-highlight .token.inserted:not(.prefix) {
 `;
 
 document.body.innerHTML += `
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
 <textarea id="editing" spellcheck="false" oninput="update(this.value); sync_scroll(this);" onscroll="sync_scroll(this);" onkeydown="check_tab(this, event);"></textarea>
 <pre id="highlighting" aria-hidden="true">
 <code class="language-html" id="highlighting-content"></code>
