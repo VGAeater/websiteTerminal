@@ -6,10 +6,10 @@ document.head.innerHTML += `
   border: 0px;
   border-radius: 8px;
   width: calc(100% - 32px);
-  height: 100%;
+  height: 150px;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   overflow: auto;
   white-space: nowrap;
 }
