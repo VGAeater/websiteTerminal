@@ -171,7 +171,7 @@ pre > code.diff-highlight.diff-highlight .token.inserted:not(.prefix) {
 `;
 
 document.body.innerHTML += `
-<div style="position:fixed; width:50vw; height:100vh; right:0px;">
+<div style="position:fixed; width:50vw; height:100vh; right:0; top:0; padding:0px; margin:0px; *:0px;">
   <textarea id="editing" spellcheck="false" oninput="update(this.value); sync_scroll(this);" onscroll="sync_scroll(this);" onkeydown="check_tab(this, event);"></textarea>
   <pre id="highlighting" aria-hidden="true">
     <code class="language-html" id="highlighting-content"></code>
