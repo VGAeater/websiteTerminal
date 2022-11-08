@@ -6,8 +6,7 @@ document.head.innerHTML += `
   border: 0px;
   border-radius: 8px;
   width: calc(100% - 32px);
-  height: 150px;
-  position: absolute;
+  height: 100%;
   top: 0;
   left: 0;
   overflow: auto;
