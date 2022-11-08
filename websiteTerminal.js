@@ -20,14 +20,14 @@ document.head.innerHTML += `
   tab-size: 2;
 }
 #editing {
-  z-index: 1;
+  z-index: 10001;
   color: transparent;
   background: transparent;
   caret-color: white;
   resize: none;
 }
 #highlighting {
-  z-index: 0;
+  z-index: 10000;
 }
 
 /* Syntax Highlighting from prism.js starts below, partly modified: */
