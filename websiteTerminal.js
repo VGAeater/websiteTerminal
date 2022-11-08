@@ -1,5 +1,8 @@
 document.head.innerHTML += `
 <style>
+* {
+  z-index: 1;
+}
 #editing, #highlighting {
   margin: 8px;
   padding: 8px;
@@ -20,14 +23,14 @@ document.head.innerHTML += `
   tab-size: 2;
 }
 #editing {
-  z-index: 1000000000001;
+  z-index: 5;
   color: transparent;
   background: transparent;
   caret-color: white;
   resize: none;
 }
 #highlighting {
-  z-index: 1000000000000;
+  z-index: 4;
 }
 
 /* Syntax Highlighting from prism.js starts below, partly modified: */
